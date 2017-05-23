@@ -1,15 +1,21 @@
 body {
     background-image: url(../images/space.jpg);
-    transition: background-color ease .6s;
+    transition: ease .6s;
 
-.container .jumbotron {
+.container .jumbotron{
 	border-radius: 10px;
-	background: lightblue;
-	text-height: 20px;
+	background-color: #ADD8E6;
+}
+
+.panel2 {
 	text-align: center;
+}
+
+.wrapper {
+	background-color: #ADD8E6;
 }
 
 .thumbnail {
 	width: 75px;
-	height: 50px;
+	height: 65px;
 }

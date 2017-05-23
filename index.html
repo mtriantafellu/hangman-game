@@ -9,6 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<!-- link to jQuery -->
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	
     <!-- BootStrap CDM -->
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,27 +25,29 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
-<body>
 
-<!-- Jumbotron Header -->
+<body>
 
 <div class="container">
 
 <div class="row">
-	<div class="col-lg-1">
-	</div>
-	<div class="col-lg-10">
-		<!-- Header and first text -->
-		<div class="jumbotron">
-		  	<h1>Space Hangman</h1>
-			<br>
-			<h2>Press any key to get started</h2>
-		  	<br>
-		</div>
-	</div>
 
-	<div class="col-lg-10">
-	</div>
+	<!-- Top Panel -->
+	<!-- <div class="wrapper"> -->
+	<!-- Jumbotron Header -->
+		<div class="col-lg-10 col-lg-offset-1 centerfy">
+			<!-- Header and first text -->
+			<div class="jumbotron">
+			  	<div class="wrapper">
+			  	<center><h1>Space Hangman</h1><center>
+				<br>
+				<center><h2>Press any key to get started</h2><center>
+			  	<br>
+			  	</center>
+			</div>
+		</div>
+	<!--</div> -->
+	
 	<!-- First row: 2 columns under-->
 	<div class="row">
 		<div class="panel panel-default">
@@ -66,26 +73,38 @@
 				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-body">
-				   			Basic panel example
+				   			<div class="panel2">
+				   			<h2>Wins:</h2>
+				   			<br>
+				   			<h2>Current word</h2>
+				   			<br>
+				   			<h2>_ _ _ _ _ _ _ _</h2>
+				   			<br>
+				   			<h2>Number of Guesses Remaining</h2>
+				   			<br>
+				   			<h2>##</h2>
+				   			<br>
+				   			<h2>Letters Already Guessed</h2>
+				   			<br>
+				   			<h2>_ _ _ _ _ _ _ _</h2>
+				   			<h2>You Just Type: <span id="user-text"><strong>...Nothing.</strong></span></h2>
+				   			</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-
-
-
-
-	
-
-
-</div>
+<!-- ASK WHY HAD TO LINK UP TO ../hangman-game/assets/javascript/game.js TO GET TO WORK!!!!!!!!!! -->
+<!-- Link to Javascript file -->
+<script src="../hangman-game/assets/javascript/game.js">
+</script>
 
 </div> <!-- div class container -->
 
-<!-- Link to Javascript file -->
-<script src="assets/javascript/game.js"></script>
+
+
 
 </body>
 </html>
