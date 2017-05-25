@@ -16,8 +16,8 @@ document.onkeyup = function(event) {
 // How to identify When user presses key
 
 // document.onkeyup = function(event) {
-		// what code is executed when user presses key
-//}
+// what code is executed when user presses key
+// }
 
 // Pick a random word and display the _ _ _ 
 
@@ -37,10 +37,18 @@ document.onkeyup = function(event) {
 	var guessesLeft = 15;
 	document.getElementById("guessesLeft").innerhtml = guessesLeft
 
+var planetNames = [
+					mars,
+					jupiter,
+					saturn,
+					mercury,
+					uranus,
+					pluto,
+					venus,
+					earth,
+					neptune,
+				  ]
 
-
-
-/*
 if (guessesleft != 0) {
 document.onkeyup = function(event) {
 	
@@ -78,4 +86,3 @@ document.onkeyup = function(event) {
 //If not guessesLeft subtracts one
 //Try again
 //If 
-*/
